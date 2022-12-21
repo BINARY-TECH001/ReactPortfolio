@@ -47,7 +47,7 @@ const data = [
   {
     id: 6,
     img: Img6,
-    title: "Instagram Page Clone Using React & Dexiie",
+    title: "Instagram Page Clone Using React & Dexie",
     github: "https://github.com/BINARY-TECH001/ig-clone/tree/master",
     demo: "https://binarytech-IgClone.netlify.app"
   },

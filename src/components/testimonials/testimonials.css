@@ -12,6 +12,7 @@
     border: .4rem solid var(--color-primary-variant);
 }
 
+
 .testimonial{
     background: var(--color-bg-variant);
     text-align: center;
@@ -20,14 +21,26 @@
     user-select: none;
 }
 
+.review{
+    display: flex;
+}
+
+.quote{
+    display: flex;
+    margin-right: .4rem;
+    color: var(--color-light);
+}
+
 .client__review{
+    flex: 5;
     color: var(--color-light);
     font-weight: 300;
     display: block;
     width: 80%;
-    margin: .8rem auto 0;
+    margin: .3rem auto 0;
     font-size: .9rem;
     letter-spacing: .8px;
+    text-justify: auto;
 }
 
 .client__name{

@@ -4,6 +4,7 @@ import AVT1 from '../../assets/abu.jpg'
 import AVT2 from '../../assets/ade.jpg'
 import AVT3 from '../../assets/alameen.png'
 import AVT4 from '../../assets/bg.png'
+import { FaQuoteLeft } from 'react-icons/fa'
 
 import { Pagination } from 'swiper'
 import {Swiper, SwiperSlide} from 'swiper/react'
@@ -56,14 +57,17 @@ const Testimonials = () => {
         {
           data.map(({id, avatar, name, review})=>{
           return(
-          <SwiperSlide className="testimonial" key={id}>
+        <SwiperSlide className="testimonial" key={id}>
           <div className="client__avatar">
             <img src={avatar} alt="Avatar One" />
           </div>
             <h5 className='client__name'>{name}</h5>
-            <small className='client__review'>
-              {review}
-            </small>
+            <div className="review">
+              <FaQuoteLeft className='quote'/>
+                <small className='client__review'>
+                  {review}
+                </small>
+                </div>
         </SwiperSlide>
             )
           })
