@@ -1,7 +1,7 @@
 import React from 'react'
 import './portfolio.css'
 import Img1 from "../../assets/MinuteApp.PNG"
-import Img2 from "../../assets/dashboard.PNG"
+import Img2 from "../../assets/Home.JPG"
 import Img3 from "../../assets/wages.PNG"
 import Img4 from "../../assets/dashboard.PNG"
 import Img5 from "../../assets/Crime.PNG"
@@ -19,7 +19,7 @@ const data = [
   {
     id: 2,
     img: Img2,
-    title: "Meeting Minutes Management System Dashboard",
+    title: "Binary Social Media Application",
     github: "https://github.com",
     demo: "#"
   },

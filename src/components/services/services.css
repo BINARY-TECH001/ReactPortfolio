@@ -30,26 +30,6 @@
     font-size: 1.2rem;
     text-align: center;
 }
-
-.service__list{
-    padding: 2rem;
-}
-
-.service__list li{
-    display: flex;
-    gap: 1rem;
-    margin-bottom: .8rem;
-}
-
-.service__list-icon{
-    color: var(--color-primary);
-    margin-top: 2px;
-}
-
-.service__list p{
-    font-size: .9rem;
-}
-
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) ===============*/
 
 @media screen and (max-width: 1024px){
@@ -73,4 +53,73 @@
         justify-content: center;
         width: 100%;
     }    
+}
+
+
+
+.portfolio_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.portfolio_item{
+    background-color: var(--color-bg-variant);
+    padding: 2rem !important;
+    border-radius: .5rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portfolio_item:hover{
+    border-color: var(--color-primary-variant);
+    background-color: var(--color-bg);
+}
+
+.portfolio_item .icon{
+    font-size: 3em;
+}
+
+.portfolio_item h3{
+    font-size: 2em;
+}
+
+.portfolio_item span{
+    font-size: 1.2em;
+    color: var(--color-light);
+    text-align: center;
+}
+/* =================== MEDIA QUERIES (MEDIUM DEVICES) ===============*/
+
+@media screen and (max-width: 1024px){
+    .portfolio_container{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+
+/* =================== MEDIA QUERIES (SMALL DEVICES) ===============*/
+
+@media screen and (max-width: 600px){
+   .portfolio_container{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+   }
+    h1{
+        font-size: 2.3rem;
+    }
+    
+    h2{
+        font-size: 2.5rem;
+    }
+    
+    h5{
+        font-size: 1rem;
+    }
+    
 }

@@ -34,7 +34,7 @@ header{
     position: absolute;
     left: 0;
     bottom: 3rem;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }
 
 .header__socials::after{
@@ -65,7 +65,7 @@ header{
     bottom: 5rem;
     transform: rotate(90deg);
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     letter-spacing: 2px;
 }
 
@@ -82,8 +82,9 @@ header{
 /* =================== MEDIA QUERIES (SMALL DEVICES) ===============*/
 
 @media screen and (max-width: 600px){
+
     header{
-        height: 100vh;
+        height: 90vh;
         padding-top: 2.5rem;
     }
 

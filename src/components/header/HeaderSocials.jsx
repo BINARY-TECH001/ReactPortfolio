@@ -6,9 +6,9 @@ import {FiInstagram} from 'react-icons/fi'
 const HeaderSocials = () => {
   return (
     <div className='header__socials'>
-      <a href="https://linkkedin.com" target="_blank" rel='noopener noreferrer'> <BsLinkedin /></a>
-      <a href="https://github.com" target="_blank" rel='noopener noreferrer'> <FaGithub /> </a>
-      <a href="https://twitter.com" target="_blank" rel='noopener noreferrer'> <FiInstagram /> </a>
+      <a href="https://linkkedin.com/in/abdulrafiu-mubarak-002687217" target="_blank" rel='noopener noreferrer'> <BsLinkedin /></a>
+      <a href="https://github.com/BINARY-TECH001" target="_blank" rel='noopener noreferrer'> <FaGithub /> </a>
+      <a href="https://twitter.com/BinaryTech001" target="_blank" rel='noopener noreferrer'> <FiInstagram /> </a>
     </div>
   )
 }
