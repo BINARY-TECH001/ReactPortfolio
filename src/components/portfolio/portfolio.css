@@ -6,7 +6,7 @@
 
 .portfolio__item{
     background-color: var(--color-bg-variant);
-    padding: 1.3rem;
+    padding: 1rem;
     border-radius: 1rem;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -23,15 +23,19 @@
 }
 
 .portfolio__item h3{
-    margin: 1.2rem 0 2rem;
+    margin: 1rem 0;
 }
 
 .portfolio__item-cta{
     display: flex;
     gap: 1rem;
-    margin-bottom: 1rem;
 }
 
+.porfolio__desc{
+    color: var(--color-light);
+    margin-bottom: 1em;
+    
+}
 
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) ===============*/
 

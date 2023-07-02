@@ -81,7 +81,12 @@
 }
 
 .portfolio_item .icon{
+    color: var(--color-primary);
     font-size: 4em;
+}
+
+.service__title{
+    color: var(--color-primary);
 }
 
 .portfolio_item h3{

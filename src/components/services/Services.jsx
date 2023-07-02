@@ -49,7 +49,7 @@ const data = [
     Icon: CiMobile1,
     title: "Mobile App Design",
     desc: "I am specialize in creating intuitive and visually appealing interfacec for users to interact with",
-    color: "teal"
+    color: "#4db5ff"
     },
 ]
 
@@ -64,8 +64,8 @@ const Services = () => {
           data.map(({id, Icon, title, desc, color})=>{
             return(
             <article className="portfolio_item" key={id}>
-              <Icon className='icon' style={{color:color}}/>
-              <h3 style={{color:color}}> {title} </h3>
+              <Icon className='icon'/>
+              <h3 className='service__title'> {title} </h3>
               <span>{desc}</span>
             </article>
             )
