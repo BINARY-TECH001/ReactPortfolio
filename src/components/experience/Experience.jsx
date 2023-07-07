@@ -12,9 +12,6 @@ import MongoDb from "../../assets/tech/mongodb.png"
 import redux from "../../assets/tech/redux.png"
 import tailwind from "../../assets/tech/tailwind.png"
 import threejs from "../../assets/tech/threejs.svg"
-import wordpress from "../../assets/tech/wordpressLogo.jpg"
-import php from "../../assets/tech/phpLogo.jpg"
-import sql from "../../assets/tech/sqlIcon.png"
 
 const skillData = [
   {
@@ -64,18 +61,6 @@ const skillData = [
   {
     skill: "Three.Js",
     img: threejs,
-  },
-  {
-    skill: "PHP",
-    img: php,
-  },
-  {
-    skill: "Wordpress",
-    img: wordpress,
-  },
-  {
-    skill: "SQL",
-    img: sql,
   },
 ]
 
