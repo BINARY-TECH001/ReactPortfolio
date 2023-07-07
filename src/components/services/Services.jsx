@@ -58,6 +58,7 @@ const Services = () => {
     <section id="services">
       <h5> What I Offer </h5>
       <h2> Services </h2>
+      <div class="underline"></div>
 
       <div className="container portfolio_container">
         {

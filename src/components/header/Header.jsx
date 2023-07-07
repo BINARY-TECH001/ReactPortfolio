@@ -20,7 +20,7 @@ const Header = () => {
               typeSpeed={120}
               deleteSpeed={50}
               delaySpeed={1000}
-              words={['Website Developer', "Fullstack Developer", "Software Engineer", "React || Node || Javascript || PHP"]}
+              words={[ "Fullstack Developer", "Software Engineer",  "Freelancer", "Artist"]}
               /></h5>
             <CTA />
             <HeaderSocials />

@@ -13,7 +13,7 @@ header{
 .type{
     letter-spacing: 1px;
     color: var(--color-primary);
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 /* CTA */
@@ -92,6 +92,7 @@ header{
         display: none;
     }
     .me{
-        margin-top: 2rem;
+        margin-top: 6rem;
+        height: auto;
     }
 }

@@ -16,6 +16,7 @@ nav{
 }
 
 nav a {
+    flex-direction: column;
     background-color: transparent;
     padding: .9rem;
     border-radius: 50%;
@@ -23,17 +24,26 @@ nav a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: var(--color-light);
-    font-size: 1.5rem;
+    color: var(--color-primary);
 }
 
 nav a:hover{
     background-color: rgba(0, 0, 0, .3);
 }
 
+.icon{
+    color:  var(--color-primary);
+    font-size: 2em;
+}
+
+nav small {
+    color: var(--color-light);
+    font-size: 1.3em;
+}
+
 nav a.active{
-    background-color: var(--color-primary);
-    color: var(--color-bg);
+    background-color: var(--color-primary-variant);
+    color: var(--color-light);
 }
 
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) ===============*/
@@ -41,6 +51,10 @@ nav a.active{
 @media screen and (max-width: 1024px){
     .container{
         width: var(--container-width-md);
+    }
+
+    nav{
+        width: max-content;
     }
 
     section{
@@ -55,6 +69,14 @@ nav a.active{
     nav{
         width: max-content;
     }
+
+    nav a{
+        font-size: .8em;
+    }
+    nav small{
+        font-size: .8em;
+    }
+    
     h1{
         font-size: 2.3rem;
     }

@@ -1,15 +1,17 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/ade.jpg'
+import ME from '../../assets/crop.jpg'
 import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
+import CV from '../../assets/cv.pdf'
 
 const about = () => {
   return (
     <section id="about">
       <h5>Get to know</h5>
       <h2>About Me</h2>
+      <div class="underline"></div>
 
       <div className="container about__container">
         <div className="about__me">
@@ -38,11 +40,15 @@ const about = () => {
               <small> 20+ Completed </small>
             </article>
           </div>
-          <p>Hello👋. This is Abdulrafiu Mubarak. I'm a passionate Fullstack developer living in Ibadan, Nigeria. I've made a lot of projects with multiple web technologies.
-            I love being part of a solution driven tech community.I love to teach others about web development. I love open source development and i build things on my Github profile. I love Javascript.
+          <p>Hello👋. This is Abdulrafiu Mubarak Ishola.
+         <p>  I'm a skilled software developer with experience in Javascript and expertise in frameworks like React, Node.js and Express.js. I'm a quick learner and collaborate closely with clients to create efficient, scalable, user-friendly solutions that solve real-world problems. I love being part of a solution driven tech community. I love to teach others about web development and I've made a lot of projects with multiple web technologies.</p>
           </p>
 
-          <a href="#contact" className='btn btn-primary'> Let's Talk </a>
+          {/* <a href="#contact" className='btn btn-primary'> Let's Talk </a> */}
+          <div className='aboutCta'>
+            <a href={CV} download className='btn'> Download CV </a>
+            <a href="#contact" className='btn btn-primary'> Let's Talk </a>
+         </div>
         </div>
       </div>
     </section>

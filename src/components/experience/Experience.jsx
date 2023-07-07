@@ -1,6 +1,5 @@
-import React from 'react'
+
 import './experience.css'
-import {BsPatchCheckFill} from 'react-icons/bs'
 import html5 from "../../assets/tech/html.png"
 import css3 from "../../assets/tech/css.png"
 import Javascript from "../../assets/tech/javascript.png"
@@ -13,8 +12,11 @@ import MongoDb from "../../assets/tech/mongodb.png"
 import redux from "../../assets/tech/redux.png"
 import tailwind from "../../assets/tech/tailwind.png"
 import threejs from "../../assets/tech/threejs.svg"
+import wordpress from "../../assets/tech/wordpressLogo.jpg"
+import php from "../../assets/tech/phpLogo.jpg"
+import sql from "../../assets/tech/sqlIcon.png"
 
-const data = [
+const skillData = [
   {
     skill: "HTML5",
     img: html5,
@@ -63,21 +65,61 @@ const data = [
     skill: "Three.Js",
     img: threejs,
   },
+  {
+    skill: "PHP",
+    img: php,
+  },
+  {
+    skill: "Wordpress",
+    img: wordpress,
+  },
+  {
+    skill: "SQL",
+    img: sql,
+  },
+]
+
+const educationData = [
+  {
+    id: 1,
+    cert: 'JSCE',
+    sch: "Al-Iman Group Of Schools, Oyo",
+    year: '2007 - 2012',
+  },
+  {
+    id: 2,
+    cert: 'SSCE',
+    sch: "God' Blessing College, Oyo",
+    year: '2012 - 2018',
+  },
+  {
+    id: 3,
+    cert: 'Software Tech Certified',
+    sch: "NPOWER, Federal Republic Nigeria Empowerment",
+    year: '2020 - 2021',
+  },
+  {
+    id: 4,
+    cert: 'ND, Computer Science',
+    sch: "FCAH&PT Ibadan",
+    year: '2020 - 2022',
+  },
 ]
 
 const Experience = () => {
   return (
     <section id="experience">
       <h5> Skills I Have </h5>
-      <h2> My Experience </h2>
+      <h2> My Skills & Education </h2>
+      <div class="underline"></div>
 
       <div className="container experience__container">
+        <h4 className='intro'> I am an highly skilled and motivated individual wiith a strong background in the following technologies </h4>
         <div className="experience__frontend">
 
-        <h3> Technologies </h3>
         <div className="experience__content">
           {
-          data.map(({skill, img})=>{
+          skillData.map(({skill, img})=>{
             return(
               <article className="experience__details">
               <div>
@@ -92,47 +134,22 @@ const Experience = () => {
         </div>
 
         <div className="experience__Backend">
-        <h3> Education </h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-              <h4>Node Js</h4>
-              <small className="text-light">Experienced</small>
+        <p className='eduTitle'> Education </p>
+        <div className="underline"></div>
+          <div className="experience__content2">
+            {
+              educationData.map(({ id, cert, sch, year })=>{
+                return (
+            <article className="experience__details" key={id}>
+              <h5 className="cert"> {cert} </h5>
+              <div className="schoolYear">
+                <p> {sch} </p>
+                <small className='year'> {year} </small>
               </div>
             </article>
-
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-              <h4> MongoDB </h4>
-              <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-              <h4> PHP </h4>
-              <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-              <h4>MYSQl </h4>
-              <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-              <h4>Python</h4>
-              <small className="text-light">Intermediate</small>
-              </div>
-            </article>
+                )
+              })
+            }
             </div>
         </div>
       </div>

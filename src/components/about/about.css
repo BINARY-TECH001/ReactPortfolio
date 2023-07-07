@@ -19,6 +19,11 @@
     transition: var(--transition);
 }
 
+.aboutCta{
+    display: flex;
+    gap: 1em;
+}
+
 .about__me-image{
     border-radius: 2rem;
     overflow: hidden;
@@ -71,7 +76,7 @@
     color: var(--color-light);
 }
 
-.about__content p{
+.about__content p:nth-child(2){
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
 }
