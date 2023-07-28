@@ -59,14 +59,33 @@ header{
 }
 
 /* ========== SCROLL DOWN ===========*/
-.scroll__down{
+/* .scroll__down{
     position: absolute;
     right: -2.3rem;
     bottom: 5rem;
-    transform: rotate(90deg);
     font-weight: 300;
     font-size: 1.8rem;
     letter-spacing: 2px;
+} */
+
+
+.scroll__down{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    right: 0;
+    bottom: 7rem;
+    font-size: 1.8rem;
+    transform: rotate(90deg);
+}
+
+.scroll__down::after{
+    transform: rotate(90deg);
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
 }
 
 

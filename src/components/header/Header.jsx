@@ -20,7 +20,7 @@ const Header = () => {
               typeSpeed={120}
               deleteSpeed={50}
               delaySpeed={1000}
-              words={[ "Fullstack Developer", "Software Engineer",  "Freelancer", "Artist"]}
+              words={[ "Fullstack Developer", "Mobile App Developer",  "Freelancer", "Artist"]}
               /></h5>
             <CTA />
             <HeaderSocials />
@@ -29,7 +29,9 @@ const Header = () => {
                 <img src={ME} alt="me" />
             </div>
 
-            <a href="#contact" className='scroll__down'> Scroll Down </a>
+            <div className="scroll__down">
+            <a href="#contact" className='scroll__do'> Contact Now </a>
+            </div>
         </div>
     </header>
   )

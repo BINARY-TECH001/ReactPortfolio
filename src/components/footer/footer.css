@@ -56,11 +56,13 @@ footer a{
 
 .footer__copyright{
     font-size: 1.3rem;
-    font-weight: 600;
     margin-bottom: 8rem;
     color: var(--color-bg);
 }
 
+.name{
+    font-weight: 700;
+}
 /* =================== MEDIA QUERIES (SMALL DEVICES) ===============*/
 
 @media screen and (max-width: 600px){
