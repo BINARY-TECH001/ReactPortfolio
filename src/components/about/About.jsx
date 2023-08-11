@@ -43,10 +43,7 @@ const about = () => {
               <small> 20+ Completed </small>
             </article>
           </div>
-          <p>
-            Hello👋. This is Abdulrafiu Mubarak Ishola.
             <p>
-              {" "}
               I'm a skilled software developer with experience in Javascript and
               expertise in frameworks like React, Node.js and Express.js. I'm a
               quick learner and collaborate closely with clients to create
@@ -54,7 +51,6 @@ const about = () => {
               problems. I love being part of a solution driven tech community. I
               love to teach others about web development and I've made a lot of
               projects with multiple web technologies.
-            </p>
           </p>
 
           <div className="about__socials">

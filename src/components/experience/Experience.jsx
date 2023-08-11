@@ -107,7 +107,7 @@ const Experience = () => {
           skillData.map(({skill, img})=>{
             return(
               <article className="experience__details">
-              <div>
+              <div className='techContainer'>
                 <img className='tech__img' src={img} alt="Technology" />
               <p className="text">{skill}</p>
               </div>

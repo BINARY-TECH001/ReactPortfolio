@@ -38,22 +38,6 @@ const data = [
     demo: "#"
   },
   {
-    id: 4,
-    img: Img4,
-    title: "Meeting Minutes Management System Dashboard",
-    github: "https://github.com/BINARY-TECH001/MinuteApp",
-    desc: "A dashboard designed using PHP to manage the Meeting Minutes management system. Written in PHP and Js.",
-    demo: "#"
-  },
-  {
-    id: 5,
-    img: Img5,
-    title: "FRSC Crime Reporting System",
-    github: "https://github.com/BINARY-TECH001/Crime-Report",
-    desc: "A web bssed crime reporting system designed using PHP, MYSQL, Javascript for reporting crimes and manging crimes data.",
-    demo: "#"
-  },
-  {
     id: 6,
     img: Img6,
     title: "Instagram Page Clone Using React & Dexie",
@@ -67,14 +51,6 @@ const data = [
     title: "Binary Blog Site",
     github: "https://github.com/BINARY-TECH001/BINARY-BLOG",
     desc: "Blog site desiigned using React.Js. It contains 5+ pages including authentication System, Comment, Posting Features and lots more.",
-    demo: "#"
-  },
-  {
-    id: 8,
-    img: pharm,
-    title: "Al-Miskeen Pharmacy Management System",
-    github: "https://github.com/BINARY-TECH001/PharmacyDashboard",
-    desc: "A web Application built with PHP, Javascript & Bootstrap for Al-Miskeen Pharmacy for mangaing their store. It contains over 10 pages including Authhentication.",
     demo: "#"
   },
   {

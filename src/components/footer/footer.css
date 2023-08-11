@@ -66,7 +66,11 @@ footer a{
 /* =================== MEDIA QUERIES (SMALL DEVICES) ===============*/
 
 @media screen and (max-width: 600px){
-   
+   footer{
+    margin-top: 1.5em;
+    height: auto;
+    padding: 2em;
+   }
     .permalinks{
         flex-direction: column;
         gap: 1.5rem;
@@ -74,5 +78,19 @@ footer a{
 
     .footer__socials{
         margin-bottom: 2.6rem;
+    }
+
+    .footer__socials a{
+        font-size: 1em;
+    }
+    .footer__logo{
+        font-size: 1.2em;
+        margin: 0;
+    }   
+    .footer__copyright small{
+        font-size: .5em;
+    }
+    .footer__socials{
+        margin: .7em 0;
     }
 }

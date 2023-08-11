@@ -1,7 +1,7 @@
 nav{
     background-color: rgba(0, 0, 0, .3);
     /* width: max-content; */
-    width: 50%;
+    width: 40%;
     display: block;
     padding: 1rem 1.7rem;
     z-index: 2;
@@ -19,7 +19,7 @@ nav a {
     flex-direction: column;
     background-color: transparent;
     padding: .9rem;
-    border-radius: 50%;
+    border-radius: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@ nav a:hover{
 }
 
 .icon{
-    color:  var(--color-primary);
+    color:  var(--color-light);
     font-size: 2em;
 }
 
@@ -67,22 +67,23 @@ nav a.active{
 
 @media screen and (max-width: 600px){
     nav{
-        width: max-content;
+        width: 90%;
+        margin: 0 auto;
     }
 
     nav a{
-        font-size: .8em;
+        font-size: .6em;
     }
     nav small{
-        font-size: .8em;
+        font-size: .6em;
     }
     
     h1{
-        font-size: 2.3rem;
+        font-size: 2.1rem;
     }
     
     h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     h5{
