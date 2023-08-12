@@ -75,7 +75,11 @@ nav a.active{
         font-size: .6em;
     }
     nav small{
-        font-size: .6em;
+        font-size: .6em !important;
+    }
+
+    nav a.active{
+        font-size: 1em;
     }
     
     h1{
