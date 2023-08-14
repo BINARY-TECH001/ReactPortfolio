@@ -62,7 +62,11 @@ nav a.active{
     }
 }
 
-
+@media screen and (max-width: 1520px){
+    nav{
+        width: max-content;
+    }
+}
 /* =================== MEDIA QUERIES (SMALL DEVICES) ===============*/
 
 @media screen and (max-width: 600px){
