@@ -9,9 +9,16 @@ import { FaGithub } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { IoLogoTwitter } from "react-icons/io";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init({
+  duration: 2000,
+});
+
 const about = () => {
   return (
-    <section id="about">
+    <section id="about" data-aos="zoom-in-up">
       <h5>Get to know</h5>
       <h2>About Me</h2>
       <div class="underline"></div>

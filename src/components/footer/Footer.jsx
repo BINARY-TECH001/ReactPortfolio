@@ -4,12 +4,18 @@ import { FaGithub } from "react-icons/fa";
 import {FaFacebookF} from 'react-icons/fa'
 import {FiInstagram} from 'react-icons/fi'
 import {IoLogoTwitter} from 'react-icons/io'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init({
+  duration: 2000,
+});
 
 
 
 const Footer = () => {
   return (
-    <footer id="footer">
+    <footer id="footer" data-aos="zoom-in-down">
       <a href="#" className='footer__logo'>ABDULRAFIU MUBARAK</a>
 
 

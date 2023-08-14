@@ -13,6 +13,13 @@ import redux from "../../assets/tech/redux.png"
 import tailwind from "../../assets/tech/tailwind.png"
 import threejs from "../../assets/tech/threejs.svg"
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init({
+  duration: 2000,
+});
+
 const skillData = [
   {
     skill: "HTML5",
@@ -93,7 +100,7 @@ const educationData = [
 
 const Experience = () => {
   return (
-    <section id="experience">
+    <section id="experience" data-aos="fade-up" data-aos-duration="3000">
       <h5> Skills I Have </h5>
       <h2> My Skills & Education </h2>
       <div class="underline"></div>

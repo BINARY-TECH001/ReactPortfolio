@@ -6,6 +6,14 @@ import {BsWhatsapp} from 'react-icons/bs'
 import emailjs from 'emailjs-com'
 import { useRef } from 'react'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init({
+  duration: 2000,
+});
+
+
 const Contact = () => {
     const form = useRef();
   
@@ -17,7 +25,7 @@ const Contact = () => {
       e.target.reset()
     };
   return (
-    <section id="contact">
+    <section id="contact" data-aos="zoom-in-down">
       <h5>Get in Touch</h5>
       <h2>Contact Me</h2>
       <div class="underline"></div>

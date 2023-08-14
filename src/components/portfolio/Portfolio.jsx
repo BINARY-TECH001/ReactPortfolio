@@ -11,6 +11,12 @@ import pharm from '../../assets/pharm.JPG'
 import Github from '../../assets/GithubSearch.JPG'
 import wordle from '../../assets/wordle.JPG'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init({
+  duration: 2000,
+});
 
 const data = [
   {
@@ -82,7 +88,7 @@ const Portfolio = () => {
         {
           data.map(({id, img, title, github, demo, desc})=>{
             return(
-          <article className="portfolio__item" key={id}>
+          <article className="portfolio__item" key={id} data-aos="flip-left">
           <div className="portfolio__item-image">
             <img src={img} alt={title} />
           </div>

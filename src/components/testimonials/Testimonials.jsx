@@ -6,6 +6,7 @@ import AVT3 from '../../assets/alameen.png'
 import AVT4 from '../../assets/bg.png'
 import { FaQuoteLeft } from 'react-icons/fa'
 
+
 import { Pagination } from 'swiper'
 import {Swiper, SwiperSlide} from 'swiper/react'
 
@@ -14,6 +15,12 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 // import 'swiper/css/scrollbar'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init({
+  duration: 2000,
+});
 
 const data = [
   {
@@ -44,7 +51,7 @@ const data = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials">
+    <section id="testimonials" data-aos="zoom-in-down">
       <h5> Review from clients </h5>
       <h2> Testimonials </h2>
       <div class="underline"></div> 
